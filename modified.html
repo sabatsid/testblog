@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MODIFIED</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+		<body>
+		<div class="background">
+		  <div class="nav">
+			<a class="a active"href="#">HOME</a>
+			<a class="b" href="#">ABOUT</a>
+			<a class="c" href="#">GALLERY</a>
+			<a class="d" href="#">CONTACT</a>
+		  </div>
+          <div class="content">
+			<div class="home">
+				<h1>BE YOUR OWN HERO</h1>
+				<h3>SIDHARTH SABAT</h3>
+			</div>
+			
+<div class="aboutus">
+<p> Many may argue that this power is not possessed by everyone which is exactly why I feel that they are taking it for granted. 
+<br> People believe it is just possessed by talented and creative homo sapiens. <br> </p>
+<p>However, I believe that as a human we all are born with this superpower. <br>
+ The superpower I’m talking about is the ability of human beings to indulge in, participate and create any form of art.</p>
+<p><i>Who is a superhero? If I was asked this question then any day my answer would be the same.</i></p>
+<p>A superhero is someone who believes in himself and his potentials independent of the fact that how powerful his superpowers really are.<br> 
+He may or may not be born with superpowers but the decisions and skill to use those solely remain with him and him alone.</p>
+<p>Art is not just drawing or painting, it is the ability to let one’s creativity capture one’s mind and make one think out of the box.
+ Every art is beautiful, every art is unique, every art is worthy.
+<br><b>We all are artists, Curiosity creates us, Creativity carves us!</b></p>
+Art is something only human beings can do.Hence, I believe that all human beings are artists by birth. 
+Most of them don’t succeed in actually developing that artist within them and that’s why they end up not recognizing their potential at all.<br>
+With the aim to run the race of our lives, we are in some way neglecting the things that we actually once loved.
+<p>Just close your eyes and think about the moment you felt extremely thrilled while doing a job which wasn’t a part of your routine task.<br> 
+The mere thought of it brings a smile on your face, right? Well, no one is stopping you to embrace it. Go on.<br>
+Superpowers are never used by heroes to earn their bread. 
+So I won’t suggest you to make your superpower a way to sustain your livelihood but I sure would like to say that stop taking it for granted 
+because we are the only species with the power to enjoy different forms of arts. 
+Indulge in those activities whenever you are free, make it a point to get lost in them when you are sad and lastly superpowers are used to help others. 
+So if any of your art brings a smile on someone else’s face in addition to your own then that power is truly super.</p>
+</div>
+
+	<div class="gallery">
+		<div class="image">
+			<img src="images/1.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/2.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/6.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/4.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/3.jpg" />
+		</div>
+		<div class="image">
+			<img src="images/5.jpg" />
+		</div>
+	</div>  
+		  
+	<div class="contactus">
+			<div class="contactform">
+			<form action="modified.html" method="post">
+				<input type="text" name="" class="inputtext" placeholder="First name">
+				<input type="text" name="" class="inputtext" placeholder="Last name">
+				<input type="text" name="" class="inputtext" placeholder="Email Id">
+				<textarea cols="4" rows="6" class="inputmessage"> Your message...</textarea>
+				<input type="button" name="" class="submitbutton" value="Submit">
+			</form>
+			</div>
+	</div>
+</div>
+</div>
+		  
+		<script type="text/javascript" src="javascript/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				$('a').click(function(){
+					//alert("OK you are the done");
+					var selected = $(this);
+					$('a').removeClass('active');
+					//nothing remains selected you can just click
+					$(selected).addClass('active');
+					//one remains selected until you don't select other
+				});
+				
+				var $a = $('.a'),
+				$b = $('.b'),
+				$c = $('.c'),
+				$d = $('.d'),
+				$home = $('.home'),
+				$aboutus = $('.aboutus'),
+				$gallery=$('.gallery'),
+				$contactus=$('.contactus');
+				$a.click(function(){
+					$home.fadeIn();
+					$aboutus.fadeOut();
+					$gallery.fadeOut();
+					$contactus.fadeOut();
+					});
+				$b.click(function(){
+					$aboutus.fadeIn();
+					$home.fadeOut();
+					$gallery.fadeOut();
+					$contactus.fadeOut();
+					});
+				$c.click(function(){
+					$gallery.fadeIn();
+					$home.fadeOut();
+					$aboutus.fadeOut();
+					$contactus.fadeOut();
+				});
+				$d.click(function(){
+					$contactus.fadeIn();
+					$home.fadeOut();
+					$gallery.fadeOut();
+					$aboutus.fadeOut();	
+				});
+				
+			});
+		</script>
+		</body>
+	</html>
